@@ -46,6 +46,7 @@ a {
   margin-block: 2rem;
 }
 
+
 .footer__col h4 {
   margin-bottom: 2rem;
   font-size: 1.2rem;
@@ -93,6 +94,7 @@ a {
   text-align: center;
 }
 
+
 @media (width > 576px) {
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -106,3 +108,4 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+

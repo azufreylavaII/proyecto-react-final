@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.css';
-import facebookIcon from "../../image/icon/social/facebook.png";
-import instagramIcon from "../../image/icon/social/instagram.png";
-import youtubeIcon from "../../image/icon/social/youtube.png";
-import twitterIcon from "../../image/icon/social/twitter.png";
-import logoIcon from "../../image/icon/logo/logo.png";
+import facebookIcon from "../../assets/icons/social/facebook.png";
+import instagramIcon from "../../assets/icons/social/instagram.png";
+import youtubeIcon from "../../assets/icons/social/youtube.png";
+import twitterIcon from "../../assets/icons/social/twitter.png";
+import logoIcon from "../../assets/icons/logo/logo.png";
 
 
 

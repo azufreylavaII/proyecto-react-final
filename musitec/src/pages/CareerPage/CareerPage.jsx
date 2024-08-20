@@ -1,6 +1,6 @@
 
 import React from 'react';
-function CarrerPage (){
+function CareerPage (){
 
     return(<>
     <h1>careras</h1>
@@ -9,4 +9,4 @@ function CarrerPage (){
 
 }
 
-export default CarrerPage;
+export default CareerPage;

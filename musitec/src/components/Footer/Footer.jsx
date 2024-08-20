@@ -1,5 +1,15 @@
 import React from 'react';
 import './Footer.css';
+import facebookIcon from "../../image/icon/social/facebook.png";
+import instagramIcon from "../../image/icon/social/instagram.png";
+import youtubeIcon from "../../image/icon/social/youtube.png";
+import twitterIcon from "../../image/icon/social/twitter.png";
+import logoIcon from "../../image/icon/logo/logo.png";
+
+
+
+
+
 
 function Footer() {
   return (<>
@@ -7,7 +17,7 @@ function Footer() {
     <div class="footer__container">
       <div class="footer__col">
         <div class="footer__logo">
-          <a href="#"><img src="./image/icon/logo/logo.png" alt="logo de Instituto Musitec" /></a>
+          <a href="#"><img src={logoIcon} alt="logo de Instituto Musitec" /></a>
         </div>
         <p class="footer__section__description">
           Descubre nuestra malla exclusiva de carreras, cursos y programas que enriquecen cada experiencia con
@@ -41,10 +51,10 @@ function Footer() {
           <li><a href="#">musitec@info.com</a></li>
         </ul>
         <div class="footer__socials">
-          <a href="#"><img src="./image/icon/social/facebook.png" alt="facebook" /></a>
-          <a href="#"><img src="./image/icon/social/instagram.png" alt="instagram" /></a>
-          <a href="#"><img src="./image/icon/social/youtube.png" alt="youtube" /></a>
-          <a href="#"><img src="./image/icon/social/twitter.png" alt="twitter" /></a>
+          <a href="#"><img src={facebookIcon} alt="facebook" /></a>
+          <a href="#"><img src={instagramIcon} alt="instagram" /></a>
+          <a href="#"><img src={youtubeIcon} alt="youtube" /></a>
+          <a href="#"><img src={twitterIcon} alt="twitter" /></a>
         </div>
       </div>
     </div>

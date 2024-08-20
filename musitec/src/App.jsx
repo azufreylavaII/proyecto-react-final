@@ -11,6 +11,7 @@ import CareerPage from './pages/CareerPage/CareerPage';
 import CoursePage from './pages/CoursePage/CoursePage';
 import AgreementPage from './pages/AgreementPage/AgreementPage';
 import NewPage from './pages/NewPage/NewPage';
+import RegisterPage from './pages/RegisterPage/RegisterPage';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/course" element={<CoursePage/>} />
           <Route path="/agreement" element={<AgreementPage/>} />
           <Route path="/new" element={<NewPage/>} />
+          <Route path="/register" element={<RegisterPage/>} />
           <Route path="/store" element={<StorePage />} />
           <Route path="/services" element={<ServicesPage />} />
         </Routes>

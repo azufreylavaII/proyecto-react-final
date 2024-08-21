@@ -4,41 +4,42 @@ import { Link } from 'react-router-dom';
 import logoIcon from "../../assets/icons/logo/logo.png";
 
 function Header() {
-  return (
+  return (<>
 
     <header className="header">
+      <nav>
+        <div className="nav__bar">
 
-      <div className="nav__bar">
+          <div className="header__logo">
 
-        <div className="header__logo">
-          <a href="#"><img src={logoIcon} alt="logo" /></a>
+            <a href="#"><img src={logoIcon} alt="logo" /></a>
+
+          </div>
+          <div className="nav__menu__btn" id="menu-btn">
+            <i className="ri-menu-line"></i>
+          </div>
         </div>
 
-        <div className="nav__menu__btn" id="menu-btn">
-          <i className="ri-menu-line"></i>
-        </div>
+        <ul className="nav__links" id="nav-links">
 
-      </div>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/about">Nosotros</Link></li>
+          <li><Link to="/career">Carreras</Link></li>
+          <li><Link to="/course">Cursos</Link></li>
+          <li><Link to="/agreement">Convenios</Link></li>
+          <li><Link to="/new">Noticias</Link></li>
+          <li><Link to="/register">registro</Link></li>
 
-
-      <ul className="nav__links" id="nav-links">
-
-        <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/about">Nosotros</Link></li>
-        <li><Link to="/career">Carreras</Link></li>
-        <li><Link to="/course">Cursos</Link></li>
-        <li><Link to="/agreement">Convenios</Link></li>
-        <li><Link to="/new">Noticias</Link></li>
-        <li><Link to="/register">Registro</Link></li>
-
-      </ul>
-      <a href="page_inscribirse/inscripcion.html"><button class="btn nav__btn">Inscribirse</button></a>
-
+        </ul>
+        <a href="page_inscribirse/inscripcion.html"><button class="btn nav__btn">Inscribirse</button></a>
+      </nav>
       <div className="section__container header__container" id="home">
         <h1>Sumérgete en la industria<br />con <span>Musitec</span>.</h1>
         <p>Somos el único Instituto Superior de Música avalado por MINEDU.</p>
       </div>
     </header>
+
+  </>
   );
 }
 

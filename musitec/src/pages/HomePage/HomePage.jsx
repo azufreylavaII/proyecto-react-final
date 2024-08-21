@@ -1,10 +1,13 @@
 import React from 'react';
+import InicioUs from '../../components/inicio/InicioUs/InicioUs';
+import InicioServicesSection from '../../components/inicio/InicioServicesSection/InicioServicesSection';
 
 function HomePage() {
   return (
     <div>
-      <h1>Bienvenido a MueblesFAST</h1>
-      <p>Descubre nuestros muebles de alta calidad.</p>
+      <InicioUs/>
+      <InicioServicesSection/>
+
     </div>
   );
 }

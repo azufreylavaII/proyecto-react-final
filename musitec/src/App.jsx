@@ -20,7 +20,6 @@ function App() {
       <div className="App">
        
         <Header />
-        <h1>jojolete2</h1>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />

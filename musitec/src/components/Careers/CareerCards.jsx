@@ -12,7 +12,6 @@ function CareerCards() {
         window.location.href = url;
     }
 
-
     /* Para que el botón cambie de color al pasar el mouse*/
     const buttonsCareer = document.querySelectorAll('.buttonCareer');
 

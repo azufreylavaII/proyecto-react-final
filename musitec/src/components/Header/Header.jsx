@@ -29,7 +29,7 @@ function Header() {
         <li><Link to="/course">Cursos</Link></li>
         <li><Link to="/agreement">Convenios</Link></li>
         <li><Link to="/new">Noticias</Link></li>
-        <li><Link to="/register">Registro</Link></li>
+        <li><Link to="/register">registrorhetrjrty</Link></li>
 
       </ul>
       <a href="page_inscribirse/inscripcion.html"><button class="btn nav__btn">Inscribirse</button></a>

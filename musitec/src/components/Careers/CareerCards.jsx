@@ -1,48 +1,54 @@
 import { Fragment } from "react";
+import { useEffect } from "react";
 import "./CareerCards.css";
 import ImageCareer1 from "../../assets/images/careers/Cantante1.png";
 import ImageCareer2 from "../../assets/images/careers/productor2.jpg";
 import ImageCareer3 from "../../assets/images/careers/pedagogiaMusical.png";
 
 function CareerCards() {
-  /* Para que al pulsar el botón "ver malla curricular"
+
+  useEffect(() => {
+    /* Para que al pulsar el botón "ver malla curricular"
     este me lleve a las respectivas páginas*/
-  function redireccion(url) {
-    window.location.href = url;
-  }
+    function redireccion(url) {
+      window.location.href = url;
+    }
 
-  /* Para que el botón cambie de color al pasar el mouse*/
-  const buttonsCareer = document.querySelectorAll(".buttonCareer");
+    /* Para que el botón cambie de color al pasar el mouse*/
+    const buttonsCareer = document.querySelectorAll(".buttonCareer");
 
-  const addCareerButtonHover = (button) => {
-    button.style.backgroundColor = "#bd283e";
-  };
+    const addCareerButtonHover = (button) => {
+      button.style.backgroundColor = "#bd283e";
+    };
 
-  const removeCareerButtonHover = (button) => {
-    button.style.backgroundColor = "#e62f4a";
-  };
+    const removeCareerButtonHover = (button) => {
+      button.style.backgroundColor = "#e62f4a";
+    };
 
-  buttonsCareer.forEach((button) => {
-    button.addEventListener("mouseover", () => addCareerButtonHover(button));
-    button.addEventListener("mouseout", () => removeCareerButtonHover(button));
-  });
+    buttonsCareer.forEach((button) => {
+      button.addEventListener("mouseover", () => addCareerButtonHover(button));
+      button.addEventListener("mouseout", () => removeCareerButtonHover(button));
+    });
 
-  /* Para que al pasar el mouse sobre las tarjetas estas aumenten su tamaño
-    y al dejar de pasar el mouse tengan su tamaño inicial */
-  const careerCards = document.querySelectorAll(".containerCareer");
+    /* Para que al pasar el mouse sobre las tarjetas estas aumenten su tamaño
+      y al dejar de pasar el mouse tengan su tamaño inicial */
+    const careerCards = document.querySelectorAll(".containerCareer");
 
-  const addCareerCardHover = (card) => {
-    card.style.transform = "scale(1.05)";
-  };
+    const addCareerCardHover = (card) => {
+      card.style.transform = "scale(1.05)";
+    };
 
-  const removeCareerCardHover = (card) => {
-    card.style.transform = "none";
-  };
+    const removeCareerCardHover = (card) => {
+      card.style.transform = "none";
+    };
 
-  careerCards.forEach((card) => {
-    card.addEventListener("mouseover", () => addCareerCardHover(card));
-    card.addEventListener("mouseout", () => removeCareerCardHover(card));
-  });
+    careerCards.forEach((card) => {
+      card.addEventListener("mouseover", () => addCareerCardHover(card));
+      card.addEventListener("mouseout", () => removeCareerCardHover(card));
+    });
+  }, [])
+
+
 
   return (
     <>

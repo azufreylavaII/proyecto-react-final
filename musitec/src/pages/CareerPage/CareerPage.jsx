@@ -1,8 +1,9 @@
 import { Fragment } from 'react';
 import React from 'react';
-import './CareerPage.css'
+import './CareerPage.css';
 import TitleCareer from '../../components/Careers/TitleCareer';
 import CareerCards from '../../components/Careers/CareerCards';
+import SliderCareer from '../../components/Careers/SliderCareer';
 
 function CareerPage (){
 
@@ -11,6 +12,7 @@ function CareerPage (){
         <div>
             <TitleCareer />
             <CareerCards />
+            <SliderCareer />
         </div>
     </>
     );

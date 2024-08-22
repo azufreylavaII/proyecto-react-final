@@ -5,7 +5,6 @@ import logoIcon from "../../assets/icons/logo/logo.png";
 
 function Header() {
   return (<>
-
     <header className="header">
       <nav>
         <div className="nav__bar">

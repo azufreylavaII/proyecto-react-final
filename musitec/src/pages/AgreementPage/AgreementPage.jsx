@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "./AgreementPage.css";
 
+//componentes
+import TiposConvenios from "../../components/Convenios/TiposConvenios";
+
 function AgreementPage() {
   useEffect(() => {
     let numero = document.querySelectorAll(".numero");
@@ -49,45 +52,9 @@ function AgreementPage() {
           <p className="about__parrafo">
             Innovación en colaboraciones educativas y musicales.
           </p>
-          <div className="about__main">
-            <article className="about__icons">
-              <img
-                src="./assets/img/viaje.svg"
-                className="about__icon"
-                alt="Académicos"
-              />
-              <h3 className="about__title">Académicos</h3>
-              <p className="about__parrafo">
-                Intercambio estudiantil y programas conjuntos de investigación
-                musical global.
-              </p>
-            </article>
-            <article className="about__icons">
-              <img
-                src="./assets/img/musica.svg"
-                className="about__icon"
-                alt="Industria musical"
-              />
-              <h3 className="about__title">Industria musical</h3>
-              <p className="about__parrafo">
-                Prácticas, alianzas con sellos discográficos, producción y
-                promoción musical profesional.
-              </p>
-            </article>
-            <article className="about__icons">
-              <img
-                src="./assets/img/casa.svg"
-                className="about__icon"
-                alt="Cultural y Comunitarios"
-              />
-              <h3 className="about__title">Cultural y Comunitarios</h3>
-              <p className="about__parrafo">
-                Conciertos educativos y colaboraciones orquestales para promover
-                la música comunitaria.
-              </p>
-            </article>
-          </div>
         </section>
+
+        <TiposConvenios />
 
         <section className="conocimiento">
           <div className="conocimiento__container container">

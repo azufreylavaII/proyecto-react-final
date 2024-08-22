@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./CareerCards.css";
 import ImageCareer1 from "../../assets/images/careers/Cantante1.png";
 import ImageCareer2 from "../../assets/images/careers/productor2.jpg";
@@ -7,12 +8,16 @@ import ImageCareer3 from "../../assets/images/careers/pedagogiaMusical.png";
 
 function CareerCards() {
 
+  const navigate = useNavigate();
+
+  const redireccion = () => {
+    navigate('/studyPlan');
+  } ;
+
   useEffect(() => {
     /* Para que al pulsar el botón "ver malla curricular"
     este me lleve a las respectivas páginas*/
-    function redireccion(url) {
-      window.location.href = url;
-    }
+    
 
     /* Para que el botón cambie de color al pasar el mouse*/
     const buttonsCareer = document.querySelectorAll(".buttonCareer");
@@ -46,9 +51,8 @@ function CareerCards() {
       card.addEventListener("mouseover", () => addCareerCardHover(card));
       card.addEventListener("mouseout", () => removeCareerCardHover(card));
     });
+
   }, [])
-
-
 
   return (
     <>
@@ -71,7 +75,7 @@ function CareerCards() {
             arte musical, con conocimientos teóricos y prácticos, y formación en
             22 especialidades.
           </p>
-          <button className="buttonCareer" onClick={() => redireccion("")}>
+          <button className="buttonCareer" onClick={redireccion}>
             VER MALLA CURRICULAR
           </button>
         </div>

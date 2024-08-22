@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import './TitleCareer.css'
+import './TitleCareer.css';
 
 function TitleCareer() {
 

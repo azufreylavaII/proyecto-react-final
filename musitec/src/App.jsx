@@ -12,6 +12,7 @@ import CoursePage from './pages/CoursePage/CoursePage';
 import AgreementPage from './pages/AgreementPage/AgreementPage';
 import NewPage from './pages/NewPage/NewPage';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
+import StudyPlanPage from './pages/CareerPage/StudyPlanPage';
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
           <Route path="/register" element={<RegisterPage/>} />
           <Route path="/store" element={<StorePage />} />
           <Route path="/services" element={<ServicesPage />} />
+
+          <Route path="/studyPlan" element={<StudyPlanPage />} />
         </Routes>
         <Footer />
       </div>

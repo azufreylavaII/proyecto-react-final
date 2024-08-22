@@ -1,9 +1,13 @@
 import React from 'react';
+import AboutContenido from '../../components/About/AboutContenido/AboutContenido';
 
 
 function AboutPage() {
   return (
-<h1> about </h1>
+<>
+
+<AboutContenido/>
+</>
   );
 }
 

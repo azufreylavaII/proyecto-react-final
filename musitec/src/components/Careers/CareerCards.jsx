@@ -15,10 +15,7 @@ function CareerCards() {
   } ;
 
   useEffect(() => {
-    /* Para que al pulsar el botón "ver malla curricular"
-    este me lleve a las respectivas páginas*/
     
-
     /* Para que el botón cambie de color al pasar el mouse*/
     const buttonsCareer = document.querySelectorAll(".buttonCareer");
 
@@ -97,7 +94,7 @@ function CareerCards() {
             canciones. La composición combina sonidos y ritmos. Un licenciado en
             Producción y Composición domina todo el proceso y su contexto.
           </p>
-          <button className="buttonCareer" onClick={() => redireccion("")}>
+          <button className="buttonCareer" onClick={redireccion}>
             VER MALLA CURRICULAR
           </button>
         </div>
@@ -119,7 +116,7 @@ function CareerCards() {
             cada alumno. Un licenciado en esta área es experto en enseñanza
             musical y su contexto.
           </p>
-          <button className="buttonCareer" onClick={() => redireccion("")}>
+          <button className="buttonCareer" onClick={redireccion}>
             VER MALLA CURRICULAR
           </button>
         </div>

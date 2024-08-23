@@ -30,7 +30,7 @@ function Header() {
           <li><Link to="/register">registro</Link></li>
 
         </ul>
-        <a href="page_inscribirse/inscripcion.html"><button class="btn nav__btn">Inscribirse</button></a>
+        <a href="page_inscribirse/inscripcion.html"><button className="btn nav__btn">Inscribirse</button></a>
       </nav>
       <div className="section__container header__container" id="home">
         <h1>Sumérgete en la industria<br />con <span>Musitec</span>.</h1>

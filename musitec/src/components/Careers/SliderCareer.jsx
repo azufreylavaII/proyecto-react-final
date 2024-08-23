@@ -61,19 +61,19 @@ function SliderCareer() {
                         <img src={ImageSliderCareer6} alt="Slide 6" />
                     </div>
 
-                    <div class="navigationSliderCareer">
+                    <div className="navigationSliderCareer">
                         <button id="prevSliderCareer" style={{ marginLeft: "10px" }}>&#10094;</button>
                         <button id="nextSliderCareer" style={{ marginRight: "10px" }}>&#10095;</button>
                     </div>
                 </div>
 
-                <div class="navigationIndexSliderCareer">
-                    <div class="indexSliderCareer" data-index="0"></div>
-                    <div class="indexSliderCareer" data-index="1"></div>
-                    <div class="indexSliderCareer" data-index="2"></div>
-                    <div class="indexSliderCareer" data-index="3"></div>
-                    <div class="indexSliderCareer" data-index="4"></div>
-                    <div class="indexSliderCareer" data-index="5"></div>
+                <div className="navigationIndexSliderCareer">
+                    <div className="indexSliderCareer" data-index="0"></div>
+                    <div className="indexSliderCareer" data-index="1"></div>
+                    <div className="indexSliderCareer" data-index="2"></div>
+                    <div className="indexSliderCareer" data-index="3"></div>
+                    <div className="indexSliderCareer" data-index="4"></div>
+                    <div className="indexSliderCareer" data-index="5"></div>
                 </div>
             </div>
         </>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import  { useEffect, useState, useRef } from 'react';
 import './SliderCareer.css';
 import ImageSliderCareer1 from '/src/assets/images/careers/alumna-tocando-guitarra.png';
 import ImageSliderCareer2 from '/src/assets/images/careers/productor5.png';
@@ -7,7 +7,7 @@ import ImageSliderCareer4 from '/src/assets/images/careers/alumnos-tocando.png';
 import ImageSliderCareer5 from '/src/assets/images/careers/saladeensayo.png';
 import ImageSliderCareer6 from '/src/assets/images/careers/concierto4.png';
 
-function InicioSlider() {
+const InicioSlider = () => {
     const [indice, setIndice] = useState(0);
     const sliderRef = useRef(null);
     const intervalRef = useRef(null);
@@ -23,15 +23,31 @@ function InicioSlider() {
             clearInterval(intervalRef.current);
         };
 
-        sliderRef.current.addEventListener('mouseenter', stopSlider);
-        sliderRef.current.addEventListener('mouseleave', startSlider);
+        const handleMouseEnter = () => {
+            if (sliderRef.current) {
+                stopSlider();
+            }
+        };
+
+        const handleMouseLeave = () => {
+            if (sliderRef.current) {
+                startSlider();
+            }
+        };
+
+        if (sliderRef.current) {
+            sliderRef.current.addEventListener('mouseenter', handleMouseEnter);
+            sliderRef.current.addEventListener('mouseleave', handleMouseLeave);
+        }
 
         startSlider();
 
         return () => {
             clearInterval(intervalRef.current);
-            sliderRef.current.removeEventListener('mouseenter', stopSlider);
-            sliderRef.current.removeEventListener('mouseleave', startSlider);
+            if (sliderRef.current) {
+                sliderRef.current.removeEventListener('mouseenter', handleMouseEnter);
+                sliderRef.current.removeEventListener('mouseleave', handleMouseLeave);
+            }
         };
     }, []);
 

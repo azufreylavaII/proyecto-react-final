@@ -10,9 +10,9 @@ function CareerCards() {
 
   const navigate = useNavigate();
 
-  const redireccion = () => {
-    navigate('/studyPlan');
-  } ;
+  const handleRedirect = (id) => {
+    navigate(`/studyPlan/${id}`);
+  };
 
   useEffect(() => {
     
@@ -72,7 +72,7 @@ function CareerCards() {
             arte musical, con conocimientos teóricos y prácticos, y formación en
             22 especialidades.
           </p>
-          <button className="buttonCareer" onClick={redireccion}>
+          <button className="buttonCareer" onClick={() => handleRedirect(1)}>
             VER MALLA CURRICULAR
           </button>
         </div>
@@ -94,7 +94,7 @@ function CareerCards() {
             canciones. La composición combina sonidos y ritmos. Un licenciado en
             Producción y Composición domina todo el proceso y su contexto.
           </p>
-          <button className="buttonCareer" onClick={redireccion}>
+          <button className="buttonCareer" onClick={() => handleRedirect(2)}>
             VER MALLA CURRICULAR
           </button>
         </div>
@@ -116,7 +116,7 @@ function CareerCards() {
             cada alumno. Un licenciado en esta área es experto en enseñanza
             musical y su contexto.
           </p>
-          <button className="buttonCareer" onClick={redireccion}>
+          <button className="buttonCareer" onClick={() => handleRedirect(3)}>
             VER MALLA CURRICULAR
           </button>
         </div>

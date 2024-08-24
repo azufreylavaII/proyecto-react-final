@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 :root {
-    --padding-container: 100px 0;
-    --color-title: #001A49
+    --padding-container_piero: 100px 0;
+    --color-title_piero: #001A49;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.container_piero {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-    padding: var(--padding-container);
+    padding: var(--padding-container_piero);
 }
 
-.hero {
-    
+.hero_piero {
     width: 100%;
     height: 100vh;
     min-height: 600px;
@@ -29,51 +29,51 @@ body {
 }
 
 /*nav */
-.nav {
-    --padding-container: 0;
+.nav_piero {
+    --padding-container_piero: 0;
     height: 100%;
     display: flex;
     align-items: center;
 }
-.nav__title {
+
+.nav__title_piero {
     font-weight: 300;
 }
 
-.nav__items {
+.nav__items_piero {
     list-style: none;
 }
 
-.nav__link {
+.nav__link_piero {
     margin-left: auto;
     padding: 0;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
-
 }
 
-.nav__links{
+.nav__links_piero {
     color: #fff;
     text-decoration: none;
 }
 
-.nav__menu {
+.nav__menu_piero {
     margin-left: auto;
     cursor: pointer;
     display: none;
 }
 
-.nav__img {
+.nav__img_piero {
     display: block;
     width: 30px;
 }
 
-.nav__close {
+.nav__close_piero {
     display: var(--show, none);
 }
 
-.hero::before {
+.hero_piero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -86,9 +86,9 @@ body {
     z-index: -1;
 }
 
-.hero__container {
+.hero__container_piero {
     max-width: 800px;
-    --padding-container: 0;
+    --padding-container_piero: 0;
     display: grid;
     grid-auto-rows: max-content;
     align-content: center;
@@ -97,15 +97,15 @@ body {
     text-align: center;
 }
 
-.hero__title {
+.hero__title_piero {
     font-size: 3rem;
 }
 
-.hero__parrafo {
+.hero__parrafo_piero {
     margin-bottom: 20px;
 }
 
-.cta {
+.cta_piero {
     display: inline-block;
     background-color: aquamarine;
     justify-self: center;
@@ -115,23 +115,21 @@ body {
     border-radius: 32px;
 }
 
-.about {
+.about_piero {
     text-align: center;
 }
 
-.subtitle {
-    color: var(--color-title);
+.subtitle_piero {
+    color: var(--color-title_piero);
     font-size: 2rem;
     margin-bottom: 25px;
 }
 
-.about__parrafo {
-
+.about__parrafo_piero {
     line-height: 1.7;
-    
 }
 
-.about__main{
+.about__main_piero {
     padding-top: 80px;
     display: grid;
     width: 90%;
@@ -141,7 +139,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
 
-.about__icons {
+.about__icons_piero {
     display: grid;
     gap: 1em;
     justify-items: center;
@@ -150,50 +148,44 @@ body {
     margin: 0 auto;
 }
 
-.about__icon {
+.about__icon_piero {
     width: 40px;
 }
 
-.conocimiento {
+.conocimiento_piero {
     background-color: #e5e5f7;
-
-    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 20px 20px;
-    background-position: 0 0,10px 10px;
+    background-position: 0 0, 10px 10px;
     overflow: hidden;
 }
 
-.conocimiento__container{
+.conocimiento__container_piero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     align-items: center;
 }
 
-.conocimiento__picture{
+.conocimiento__picture_piero {
     max-width: 500px;
 }
 
-.conocimiento__parrafo{
+.conocimiento__parrafo_piero {
     line-height: 1.7;
     margin-bottom: 15px;
 }
 
-.conocimiento__img{
+.conocimiento__img_piero {
     width: 100%;
     display: block;
 }
 
-
-
-
-
-
-.price{
+.price_piero {
     text-align: center;
 }
 
-.price__table{
+.price__table_piero {
     padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -202,103 +194,102 @@ body {
     align-items: center;
 }
 
-.price__element{
+.price__element_piero {
     background-color: #e5e5f7;
     text-align: center;
     border-radius: 10px;
     width: 330px;
     padding: 40px;
-    --color-plan: #696871;
-    --color-price: #1D293F;
-    --bg-cta: #fff;
-    --color-cta: #5454D4;
-    --color-items: #696871;
+    --color-plan_piero: #696871;
+    --color-price_piero: #1D293F;
+    --bg-cta_piero: #fff;
+    --color-cta_piero: #5454D4;
+    --color-items_piero: #696871;
 }
 
-.price__element--best{
+.price__element--best_piero {
     width: 370px;
     padding: 60px 40px;
     background-color: #FF7143;
-    --color-plan: rgb(255 255 255 / 75%);
-    --color-price: #fff;
-    --bg-cta: #9F3919;
-    --color-cta: #FFF;
-    --color-items: #fff;
+    --color-plan_piero: rgb(255 255 255 / 75%);
+    --color-price_piero: #fff;
+    --bg-cta_piero: #9F3919;
+    --color-cta_piero: #FFF;
+    --color-items_piero: #fff;
 }
 
-
-.price__name{
-    color: var(--color-plan);
+.price__name_piero {
+    color: var(--color-plan_piero);
     margin-bottom: 15px;
     font-weight: 300;
 }
 
-.price__price{
+.price__price_piero {
     font-size: 2.5rem;
-    color: var(--color-price);
+    color: var(--color-price_piero);
 }
 
-.price__items{
+.price__items_piero {
     margin-top: 35px;
     display: grid;
     gap: 1em;
     font-weight: 300;
     font-size: 1.2rem;
     margin-bottom: 50px;
-    color: var(--color-items);
+    color: var(--color-items_piero);
 }
 
-.price__cta{
+.price__cta_piero {
     display: block;
     padding: 20px 0;
     border-radius: 10px;
     text-decoration: none;
-    background-color: var(--bg-cta);
+    background-color: var(--bg-cta_piero);
     font-weight: 600;
-    color: var(--color-cta);
+    color: var(--color-cta_piero);
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
-.questions{
+.questions_piero {
     text-align: center;
 }
 
-.questions__container{
+.questions__container_piero {
     display: grid;
     gap: 2em;
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
-.questions__padding{
+.questions__padding_piero {
     padding: 0;
     transition: padding .3s;
     border: 1px solid #5454D4;
     border-radius: 6px;
 }
 
-.questions__padding--add{
+.questions__padding--add_piero {
     padding-bottom: 30px;
 }
 
-.questions__answer{
+.questions__answer_piero {
     padding: 0 30px 0;
     overflow: hidden;
 }
 
-.questions__title{
+.questions__title_piero {
     text-align: left;
     display: flex;
     font-size: 20px;
     padding: 30px 0 30px;
     cursor: pointer;
-    color: var(--color-title);
+    color: var(--color-title_piero);
     justify-content: space-between;
 }
 
-.questions__arrow{
+.questions__arrow_piero {
     border-radius: 50%;
-    background-color: var(--color-title);
+    background-color: var(--color-title_piero);
     width: 25px;
     height: 25px;
     display: flex;
@@ -306,41 +297,41 @@ body {
     align-items: center;
     align-self: flex-end;
     margin-left: 10px;
-    transition:  transform .3s;
+    transition: transform .3s;
 }
 
-.questions__arrow--rotate{
+.questions__arrow--rotate_piero {
     transform: rotate(180deg);
 }
 
-.questions__show{
+.questions__show_piero {
     text-align: left;
     height: 0;
     transition: height .3s;
 }
 
-.questions__img{
+.questions__img_piero {
     display: block;
 }
 
-.questions__copy{
+.questions__copy_piero {
     width: 60%;
     margin: 0 auto;
     margin-bottom: 30px;
 }
 
-
-
-
-.cuadro {
+/* Additional styles */
+.cuadro_piero {
     margin: 100px;
     display: flex;
-    justify-content: space-between; /* Distributes space evenly between children */
-    flex-wrap: wrap; 
-    border: #444cf7;/* Allows children to wrap to the next line if necessary */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: #444cf7;
 }
 
-.contenedor1, .contenedor2, .contenedor3 {
+
+
+.contenedor1_piero, .contenedor2_piero, .contenedor3_piero {
     flex: 1; /* Makes the containers take equal space */
     min-width: 20%; /* Minimum width to ensure responsiveness */
     height: 28vmin;
@@ -356,28 +347,37 @@ body {
 }
 
 
-.contenedor1 {
+.contenedor1_piero {
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
 }
 
-.contenedor3 {
+.contenedor3_piero {
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
 }
 
 
-.numero {
+.numero_piero {
     display: grid;
     place-items: center;
     font-weight: 600;
     font-size: 3em;
 }
 
-.texto {
+.texto_piero {
    text-align: center;
    font-size: 0.2em 0;
    pad: 1em 0;
    font-weight: 200;
    line-height: 2;
+}
+
+.tiposConvenios_piero {
+    margin-bottom: 300px;
+    margin-top: 0px;
+}
+
+.container_piero .about_piero {
+    margin-top: 0px;
 }

@@ -1,4 +1,4 @@
-import  { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './SliderCareer.css';
 import ImageSliderCareer1 from '/src/assets/images/careers/alumna-tocando-guitarra.png';
 import ImageSliderCareer2 from '/src/assets/images/careers/productor5.png';
@@ -55,23 +55,31 @@ const InicioSlider = () => {
         mostrarSlide(indice);
     }, [indice]);
 
-    function mostrarSlide(i) {
-        const slides = document.querySelector('.slidesCareer');
-        const indicadores = document.querySelectorAll('.indexSliderCareer');
+    const mostrarSlide = (i) => {
+        const slides = document.querySelector('.slidesCareer2');
+        const indicadores = document.querySelectorAll('.indexSliderCareer2');
 
         const desplazamiento = -i * 100;
         slides.style.transform = `translateX(${desplazamiento}%)`;
         indicadores.forEach((indicador) => indicador.classList.remove('active'));
         indicadores[i].classList.add('active');
-    }
+    };
+
+    const handlePrevClick = () => {
+        setIndice((prevIndice) => (prevIndice === 0 ? 5 : prevIndice - 1));
+    };
+
+    const handleNextClick = () => {
+        setIndice((prevIndice) => (prevIndice + 1) % 6);
+    };
 
     return (
-        <div className="containerSliderCareer">
-            <h2 id="titleSliderCareer">NUESTRAS CARRERAS ESTÁN ALTAMENTE CAPACITADAS</h2>
-            <p id="textSliderCareer">Procuramos brindarle lo mejor a nuestros alumnos</p>
+        <div className="containerSliderCareer2">
+            <h2 id="titleSliderCareer2"></h2>
+            <p id="textSliderCareer2"></p>
 
-            <div className="sliderCareer" ref={sliderRef}>
-                <div className="slidesCareer">
+            <div className="sliderCareer2" ref={sliderRef}>
+                <div className="slidesCareer2">
                     <img src={ImageSliderCareer1} alt="Slide 1" />
                     <img src={ImageSliderCareer2} alt="Slide 2" />
                     <img src={ImageSliderCareer3} alt="Slide 3" />
@@ -80,23 +88,31 @@ const InicioSlider = () => {
                     <img src={ImageSliderCareer6} alt="Slide 6" />
                 </div>
 
-                <div className="navigationSliderCareer">
-                    <button id="prevSliderCareer" style={{ marginLeft: '10px' }}>
+                <div className="navigationSliderCareer2">
+                    <button
+                        id="prevSliderCareer2"
+                        style={{ marginLeft: '10px' }}
+                        onClick={handlePrevClick}
+                    >
                         &#10094;
                     </button>
-                    <button id="nextSliderCareer" style={{ marginRight: '10px' }}>
+                    <button
+                        id="nextSliderCareer2"
+                        style={{ marginRight: '10px' }}
+                        onClick={handleNextClick}
+                    >
                         &#10095;
                     </button>
                 </div>
             </div>
 
-            <div className="navigationIndexSliderCareer">
-                <div className="indexSliderCareer" data-index="0"></div>
-                <div className="indexSliderCareer" data-index="1"></div>
-                <div className="indexSliderCareer" data-index="2"></div>
-                <div className="indexSliderCareer" data-index="3"></div>
-                <div className="indexSliderCareer" data-index="4"></div>
-                <div className="indexSliderCareer" data-index="5"></div>
+            <div className="navigationIndexSliderCareer2">
+                <div className="indexSliderCareer2" data-index="0"></div>
+                <div className="indexSliderCareer2" data-index="1"></div>
+                <div className="indexSliderCareer2" data-index="2"></div>
+                <div className="indexSliderCareer2" data-index="3"></div>
+                <div className="indexSliderCareer2" data-index="4"></div>
+                <div className="indexSliderCareer2" data-index="5"></div>
             </div>
         </div>
     );

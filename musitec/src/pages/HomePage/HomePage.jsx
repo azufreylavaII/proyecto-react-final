@@ -18,7 +18,6 @@ function HomePage() {
       <InicioBenefits/>
       <InicioData/>
       <InicioNew/>
-      <InicioSlider/>
       <ScrollRevealComponent />
 
     </div>

@@ -35,9 +35,6 @@ function Header() {
             <li>
               <Link to="/agreement">Convenios</Link>
             </li>
-            <li>
-              <Link to="/new">Noticias</Link>
-            </li>
           </ul>
           <Link to="/register">
             <button className="btn nav__btn">Inscribirse</button>

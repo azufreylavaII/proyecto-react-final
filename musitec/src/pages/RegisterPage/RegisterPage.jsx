@@ -31,7 +31,7 @@ function RegisterPage() {
       ) {
         setFeedback("Formulario enviado con éxito.");
         setTimeout(() => {
-          window.location.href = "./assets/index2.html";
+          window.location.href = "./new";
         }, 1000);
       } else {
         setFeedback("Por favor, completa todos los campos requeridos.");
@@ -60,99 +60,104 @@ function RegisterPage() {
 
   return (
     <>
-      <section className="body__cuestionario">
-        <div className="enun1">
-          <h1 id="l1">VACANTES LIMITADAS</h1>
-          <h1 id="l2">Cierre de Inscripciones: 28 de agosto</h1>
-        </div>
-        <form id="registrationForm" className="registro">
-          <input
-            className="controls"
-            id="nombres"
-            type="text"
-            name="nombres"
-            placeholder="Nombres*"
-            required
-          />
-          <div className="flex">
+      <div className="body____custionario___dentro">
+        <section className="body__cuestionario">
+          <div className="enun1">
+            <h1 id="l1">VACANTES LIMITADAS</h1>
+            <h1 id="l2">Cierre de Inscripciones: 28 de agosto</h1>
+          </div>
+          <form id="registrationForm" className="registro">
             <input
               className="controls"
-              id="apellidoPaterno"
+              id="nombres"
               type="text"
-              name="apellidoPaterno"
-              placeholder="Apellido Paterno*"
+              name="nombres"
+              placeholder="Nombres*"
               required
             />
+            <div className="flex">
+              <input
+                className="controls"
+                id="apellidoPaterno"
+                type="text"
+                name="apellidoPaterno"
+                placeholder="Apellido Paterno*"
+                required
+              />
+              <input
+                className="controls"
+                id="apellidoMaterno"
+                type="text"
+                name="apellidoMaterno"
+                placeholder="Apellido Materno*"
+                required
+              />
+            </div>
             <input
               className="controls"
-              id="apellidoMaterno"
-              type="text"
-              name="apellidoMaterno"
-              placeholder="Apellido Materno*"
+              id="correo"
+              type="email"
+              name="correo"
+              placeholder="E-mail*"
               required
             />
-          </div>
-          <input
-            className="controls"
-            id="correo"
-            type="email"
-            name="correo"
-            placeholder="E-mail*"
-            required
-          />
-          <div className="flex">
-            <input
-              className="controls"
-              id="dni"
-              type="text"
-              name="dni"
-              placeholder="Nro. de DNI*"
-              required
-            />
-            <input
-              className="controls"
-              id="celular"
-              type="text"
-              name="celular"
-              placeholder="Celular*"
-              required
-            />
-          </div>
-          <select className="controls" name="cursos" required>
-            <option value="">Seleccione una carrera o curso*</option>
-            <option value="interpretacion">
-              Carrera - Interpretación Musical
-            </option>
-            <option value="produccion">
-              Carrera - Producción y Composición
-            </option>
-            <option value="pedagogia">Carrera - Pedagogía Musical</option>
-            <option value="vocal_coach">Curso - Vocal Coach</option>
-            <option value="tecnicas_grabacion">
-              Curso - Técnicas de Grabación
-            </option>
-            <option value="teoria_musical">Curso - Teoría Musical</option>
-          </select>
-          <div className="flex">
-            <input type="checkbox" name="check" id="check" required />
-            <label htmlFor="check">
-              Acepto los términos y condiciones que conllevan a dar mi
-              información personal para fines educativos.
-            </label>
-          </div>
-          <p id="question">
-            <a href="#" id="termsLink">
-              Términos y condiciones
-            </a>
-          </p>
-          <button id="registerBtn" className="registrar" type="submit">
-            Registrar
-          </button>
-          <div id="formFeedback" style={{ color: "white" }}>
-            {feedback}
-          </div>
-        </form>
-      </section>
+            <div className="flex">
+              <input
+                className="controls"
+                id="dni"
+                type="text"
+                name="dni"
+                placeholder="Nro. de DNI*"
+                required
+              />
+              <input
+                className="controls"
+                id="celular"
+                type="text"
+                name="celular"
+                placeholder="Celular*"
+                required
+              />
+            </div>
+            <select className="controls" name="cursos" required>
+              <option value="">Seleccione una carrera o curso*</option>
+              <option value="interpretacion">
+                Carrera - Interpretación Musical
+              </option>
+              <option value="produccion">
+                Carrera - Producción y Composición
+              </option>
+              <option value="pedagogia">Carrera - Pedagogía Musical</option>
+              <option value="vocal_coach">Curso - Vocal Coach</option>
+              <option value="tecnicas_grabacion">
+                Curso - Técnicas de Grabación
+              </option>
+              <option value="teoria_musical">Curso - Teoría Musical</option>
+            </select>
+            <div className="flex">
+              <input type="checkbox" name="check" id="check" required />
+              <label htmlFor="check">
+                Acepto los términos y condiciones que conllevan a dar mi
+                información personal para fines educativos.
+              </label>
+            </div>
+            <p id="question">
+              <a href="#" id="termsLink">
+                Términos y condiciones
+              </a>
+            </p>
+            <button id="registerBtn" className="registrar" type="submit">
+              Registrar
+            </button>
+            <div
+              id="formFeedback"
+              style={{ color: "black", textAlign: "center" }}
+            >
+              {feedback}
+            </div>
+          </form>
+        </section>
+      </div>
     </>
   );
 }

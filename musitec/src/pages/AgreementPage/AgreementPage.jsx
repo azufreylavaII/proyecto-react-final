@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./AgreementPage.css";
 
 import TiposConvenios from "../../components/Convenios/TiposConvenios";
+import Seccion2 from "../../assets/images/convenio/seccion2.png";
+import Flecha from "../../assets/images/convenio/flecha.svg";
 
 function AgreementPage() {
   useEffect(() => {
@@ -33,7 +35,7 @@ function AgreementPage() {
         let addPadding = question.parentElement.parentElement;
 
         addPadding.classList.toggle("questions__padding_piero--add");
-        question.children[0].classList.toggle("questions__arrow_piero--rotate");
+        question.children[0].classList.toggle("questions__arrow--rotate_piero");
 
         if (answer.clientHeight === 0) {
           height = answer.scrollHeight;
@@ -74,13 +76,13 @@ function AgreementPage() {
                 los plazos en nuestra sección de requisitos para garantizar una
                 postulación exitosa.
               </p>
-              <a href="../inscribirse/index.html" className="cta_piero">
+              <a href="./new" className="cta_piero">
                 Inscríbete
               </a>
             </div>
             <figure className="conocimiento__picture_piero">
               <img
-                src="#"
+                src={Seccion2}
                 className="conocimiento__img_piero"
                 alt="Aplica ya"
               />
@@ -181,7 +183,7 @@ function AgreementPage() {
                   beneficios de los convenios de Musitec?
                   <span className="questions__arrow_piero">
                     <img
-                      src="./assets/img/flecha.svg"
+                      src={Flecha}
                       className="questions__img_piero"
                       alt="Arrow"
                     />
@@ -205,7 +207,7 @@ function AgreementPage() {
                   profesionales?
                   <span className="questions__arrow_piero">
                     <img
-                      src="./assets/img/flecha.svg"
+                      src={Flecha}
                       className="questions__img_piero"
                       alt="Arrow"
                     />
@@ -227,7 +229,7 @@ function AgreementPage() {
                   ¿Puedo participar en más de un convenio a la vez?
                   <span className="questions__arrow_piero">
                     <img
-                      src="./assets/img/flecha.svg"
+                      src={Flecha}
                       className="questions__img_piero"
                       alt="Arrow"
                     />

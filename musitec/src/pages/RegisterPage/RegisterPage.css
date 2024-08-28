@@ -1,3 +1,18 @@
+
+.body___cuestionario__dentro {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body__cuestionario {
+    background-image: url("../../assets/images/Inscribirse/concierto.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 .enun1{
     color: #e62f4a;
     text-align: center;
@@ -78,7 +93,7 @@
 }
 
 
-.body__cuestionario::before {
+.body___cuestionario__dentro::before {
     content: "";
     position: absolute;
     top: 0;

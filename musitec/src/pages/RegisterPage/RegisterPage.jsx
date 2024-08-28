@@ -7,6 +7,11 @@ function RegisterPage() {
   useEffect(() => {
     const form = document.getElementById("registrationForm");
 
+    const regexNombre = /^[a-zA-ZÁÉÍÓÚ\s]+$/;
+    const regexDNI = /^\d{8}$/;
+    const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regexCelular = /^\d+$/;
+
     const handleSubmit = (event) => {
       event.preventDefault();
 
@@ -19,28 +24,51 @@ function RegisterPage() {
       const cursos = document.querySelector('select[name="cursos"]').value;
       const check = document.querySelector('input[name="check"]').checked;
 
-      if (
-        nombres &&
-        apellidoPaterno &&
-        apellidoMaterno &&
-        correo &&
-        dni &&
-        celular &&
-        cursos &&
-        check
-      ) {
-        setFeedback("Formulario enviado con éxito.");
-        setTimeout(() => {
-          window.location.href = "./new";
-        }, 1000);
-      } else {
-        setFeedback("Por favor, completa todos los campos requeridos.");
+      if (regexNombre.test(nombres) === false) {
+        setFeedback("Los nombres deben contener solo letras y espacios.");
+        return;
       }
+      if (regexNombre.test(apellidoPaterno) === false) {
+        setFeedback(
+          "El apellido paterno debe contener solo letras y espacios."
+        );
+        return;
+      }
+      if (regexNombre.test(apellidoMaterno) === false) {
+        setFeedback(
+          "El apellido materno debe contener solo letras y espacios."
+        );
+        return;
+      }
+      if (regexCorreo.test(correo) === false) {
+        setFeedback("Por favor, ingresa un correo electrónico válido.");
+        return;
+      }
+      if (regexDNI.test(dni) === false) {
+        setFeedback("El DNI debe tener exactamente 8 dígitos.");
+        return;
+      }
+      if (regexCelular.test(celular) === false) {
+        setFeedback("El número de celular debe contener solo dígitos.");
+        return;
+      }
+      if (!cursos) {
+        setFeedback("Por favor, selecciona una carrera o curso.");
+        return;
+      }
+      if (!check) {
+        setFeedback("Por favor, acepta los términos y condiciones.");
+        return;
+      }
+
+      setFeedback("Formulario enviado con éxito.");
+      setTimeout(() => {
+        window.location.href = "./new";
+      }, 1000);
     };
 
     form.addEventListener("submit", handleSubmit);
 
-    // Manejo del clic para descargar el PDF
     const termsLink = document.getElementById("termsLink");
     termsLink.addEventListener("click", (event) => {
       event.preventDefault();

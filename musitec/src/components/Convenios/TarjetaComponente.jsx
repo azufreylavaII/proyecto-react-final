@@ -12,7 +12,7 @@ function TarjetaComponente({ nombre, descripcion, img }) {
           <div>
             <h3>{nombre}</h3>
             <p>{descripcion}</p>
-            <a href="#">Saber más</a>
+            <a href="./register">Saber más</a>
           </div>
         </div>
       </div>

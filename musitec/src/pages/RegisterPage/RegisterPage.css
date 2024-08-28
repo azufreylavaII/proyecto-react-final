@@ -1,0 +1,95 @@
+.enun1{
+    color: #e62f4a;
+    text-align: center;
+    margin-top: 40px;
+}
+.enun1 #l2{
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.registro a {
+    color: black; /* Cambia el color a negro */
+    text-align: center;
+    text-decoration: none;
+}
+
+.registro a:hover {
+    color: black; /* Mantén el color negro al hacer hover */
+    text-decoration: underline;
+}
+
+.registro {
+    width: 700px;
+    background: white;
+    margin: 10px auto 50px;
+    padding: 30px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: black;
+    box-shadow: 7px 13px 37px black;
+}
+  
+.controls {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #000000;
+}
+.registro #check {
+    display: flex;
+    margin: 0 10px;
+    color: black;
+}
+.registro #question {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+  
+.registro a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.registro a:hover {
+    color: black;
+    text-decoration: underline;
+}
+  
+.registro .registrar {
+    width: 100%;
+    background: #e62f4a;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+.body__cuestionario::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+    z-index: -1;
+}
+
+
+
+
+

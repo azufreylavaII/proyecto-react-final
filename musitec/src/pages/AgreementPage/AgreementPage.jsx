@@ -76,7 +76,7 @@ function AgreementPage() {
                 los plazos en nuestra sección de requisitos para garantizar una
                 postulación exitosa.
               </p>
-              <a href="./new" className="cta_piero">
+              <a href="./register" className="cta_piero">
                 Inscríbete
               </a>
             </div>
@@ -101,7 +101,7 @@ function AgreementPage() {
                 <p className="price__features_piero">Comida</p>
                 <p className="price__features_piero">Prácticas</p>
               </div>
-              <a href="../inscribirse/index.html" className="price__cta_piero">
+              <a href="./register" className="price__cta_piero">
                 Aplica ahora
               </a>
             </div>
@@ -118,7 +118,7 @@ function AgreementPage() {
                 </p>
                 <p className="price__features_piero">Talleres gratuitos</p>
               </div>
-              <a href="../inscribirse/index.html" className="price__cta_piero">
+              <a href="./register" className="price__cta_piero">
                 Aplica ahora
               </a>
             </div>
@@ -135,7 +135,7 @@ function AgreementPage() {
                 </p>
                 <p className="price__features_piero">Prácticas</p>
               </div>
-              <a href="../inscribirse/index.html" className="price__cta_piero">
+              <a href="./register" className="price__cta_piero">
                 Aplica ahora
               </a>
             </div>

@@ -4,6 +4,7 @@ import "./AgreementPage.css";
 import TiposConvenios from "../../components/Convenios/TiposConvenios";
 import Seccion2 from "../../assets/images/convenio/seccion2.png";
 import Flecha from "../../assets/images/convenio/flecha.svg";
+import Banner from "../../components/Banner_piero/Banner";
 
 function AgreementPage() {
   useEffect(() => {
@@ -141,6 +142,8 @@ function AgreementPage() {
             </div>
           </div>
         </section>
+
+        <Banner />
 
         <div className="cuadro_piero">
           <div className="contenedor1_piero">

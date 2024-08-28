@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom"; // Importa Link
 import "./cursos123.css";
 
+
 function Cursosf1() {
     return (
         <div className="containj">
             <div
                 className="contenedorImagen"
                 style={{
-                    background: "url('imagenesleo/vocal.jpg')",
+                    background: "url('../../assets/images/imagenleo/vocal.jpg')",
                     height: "150px",
                     width: "100%",
                 }}

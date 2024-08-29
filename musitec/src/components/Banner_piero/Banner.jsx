@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from "react";
 import "./Banner.css";
 
 // Importación de imágenes
-import Banner1 from "../../assets/images/convenio/Banner1.jpeg";
-import Banner2 from "../../assets/images/convenio/Banner4.jpg";
-import Banner3 from "../../assets/images/convenio/Banner8.jpg";
+import Banner1 from "../../assets/images/convenio/banner1.jpeg";
+import Banner2 from "../../assets/images/convenio/banner4.jpg";
+import Banner3 from "../../assets/images/convenio/banner8.jpg";
 
 function Banner() {
   const sliderInnerRef = useRef(null);

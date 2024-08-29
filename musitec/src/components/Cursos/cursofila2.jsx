@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"; // Importa Link
 function Cursosf2() {
     return (
         <div className="containj">
-            <button className="button">
+            <button className="buttont">
                 <Link to="/tecnical" className="link-button">VER PROGRAMA</Link>
             </button>
             <p className="text-inter">
@@ -16,9 +16,9 @@ function Cursosf2() {
                 público.
             </p>
             <div
-                className="contenedorImagen"
+                className="contenedorImagent"
                 style={{
-                    background: "url('imagenes/tecnicas de grabacion.jpg') no-repeat center center/cover",
+                    background: "url('./src/assets/images/imagenleo/tecnicas de grabacion.jpg') no-repeat center center/cover",
                     height: "150px",
                     width: "100%",
                 }}

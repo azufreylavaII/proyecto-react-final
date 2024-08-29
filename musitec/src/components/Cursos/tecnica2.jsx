@@ -4,7 +4,7 @@ import "./estructura.css";
 function Tecnica2() {
   return (
     <div className="contenido2">
-      <div className="box">
+      <div className="boxt">
         <h2>BÁSICO</h2>
         <ul>
           <li>Microfonía stereo</li>
@@ -15,10 +15,10 @@ function Tecnica2() {
           <li>Lenguaje Musical I</li>
         </ul>
       </div>
-      <div className="box">
-        <img src="imagenes/sala2.jpg" alt="Sala 2" />
+      <div className="boxt">
+        <img src="./src/assets/images/imagenleo/t1.PNG" alt="Sala 2" />
       </div>
-      <div className="box">
+      <div className="boxt">
         <h2>INTERMEDIO</h2>
         <ul>
           <li>Mezcla por matriz</li>

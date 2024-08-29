@@ -7,9 +7,9 @@ function Cursosf1() {
     return (
         <div className="containj">
             <div
-                className="contenedorImagen"
+                className="contenedorImagent"
                 style={{
-                    background: "url('../../assets/images/imagenleo/vocal.jpg')",
+                    background: "url('./src/assets/images/imagenleo/vocal.jpg')",
                     height: "150px",
                     width: "100%",
                 }}
@@ -26,7 +26,7 @@ function Cursosf1() {
                 diseñado específicamente para ti. Los entrenadores vocales de calidad mejoran significativamente su
                 confianza en sí mismo y su sensación de bienestar.
             </p>
-            <button className="button">
+            <button className="buttont">
                 <Link to="/vocal" className="link-button">VER PROGRAMA</Link>
             </button>
         </div>

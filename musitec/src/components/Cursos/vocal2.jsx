@@ -4,7 +4,7 @@ import "./estructura.css";
 function Vocal2() {
   return (
     <div className="contenido">
-      <div className="box">
+      <div className="boxt">
         <h2>BÁSICO</h2>
         <ul>
           <li>Introducción a la Audioperceptiva</li>
@@ -13,10 +13,10 @@ function Vocal2() {
           <li>Foniatría (cuidados de la Voz)</li>
         </ul>
       </div>
-      <div className="box">
-        <img src="imagenes/sala2.jpg" alt="Sala de vocalización" />
+      <div className="boxt">
+        <img src="./src/assets/images/imagenleo/v1.PNG" alt="Sala de vocalización" />
       </div>
-      <div className="box">
+      <div className="boxt">
         <h2>INTERMEDIO</h2>
         <ul>
           <li>Canto y técnica vocal 1</li>

@@ -4,10 +4,10 @@ import "./estructura.css";
 function Vocal3() {
   return (
     <div className="contenido">
-      <div className="box">
-        <img src="imagenes/vocalcoachimagen.jpg" alt="Vocal coach" />
+      <div className="boxt">
+        <img src="./src/assets/images/imagenleo/v2.PNG" alt="Vocal coach" />
       </div>
-      <div className="box">
+      <div className="boxt">
         <h2>AVANZADO</h2>
         <ul>
           <li>Canto y técnica vocal 2</li>
@@ -18,8 +18,8 @@ function Vocal3() {
           <li>Prácticas</li>
         </ul>
       </div>
-      <div className="box">
-  <img src="/imagenesleo/vocal.jpg" alt="Vocal coach avanzado" />
+      <div className="boxt">
+  <img src="./src/assets/images/imagenleo/vocal.jpg" alt="Vocal coach avanzado" />
 </div>
 
     </div>

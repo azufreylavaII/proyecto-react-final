@@ -4,7 +4,7 @@ import "./estructura.css";
 function Teoria2() {
   return (
     <div className="contenido3">
-      <div className="box">
+      <div className="boxt">
         <h2>BÁSICO</h2>
         <ul>
           <li>Foniatría</li>
@@ -14,10 +14,10 @@ function Teoria2() {
           <li>Armonía y melodía</li>
         </ul>
       </div>
-      <div className="box">
-        <img src="imagenes/teoria musical.jpg" alt="Teoría musical básica" />
+      <div className="boxt">
+        <img src="./src/assets/images/imagenleo/teoria musical.jpg" alt="Teoría musical básica" />
       </div>
-      <div className="box">
+      <div className="boxt">
         <h2>INTERMEDIO</h2>
         <ul>
           <li>Figuras y silencios musicales</li>

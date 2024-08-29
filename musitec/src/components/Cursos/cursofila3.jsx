@@ -8,12 +8,12 @@ function Cursosf3() {
       <div
         className="contenedorImagen_leo"
         style={{
-          backgroundImage: `url("../../assets/images/imagenleo/vocal.jpg")`,
+          backgroundImage: `url("./src/assets/images/imagenleo/vocal.jpg")`,
           height: "150px",
           width: "100%",
         }}
       >
-        <div className="textoImagen">Teoría Musical</div>
+        <div className="textoImagent">Teoría Musical</div>
       </div>
       <p className="text-inter">
         En este curso de teoría musical aprenderás de forma práctica a elaborar
@@ -25,7 +25,7 @@ function Cursosf3() {
         efectiva, así como para aquellos que deseen componer y crear nuevas
         obras musicales.
       </p>
-      <button className="button">
+      <button className="buttont">
         <Link to="/teoria" className="link-button">
           VER PROGRAMA
         </Link>

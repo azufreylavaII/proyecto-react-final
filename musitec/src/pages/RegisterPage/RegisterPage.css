@@ -33,7 +33,7 @@
 }
 
 .registro a:hover {
-    color: black; /* Mantén el color negro al hacer hover */
+    color: black; 
     text-decoration: underline;
 }
 

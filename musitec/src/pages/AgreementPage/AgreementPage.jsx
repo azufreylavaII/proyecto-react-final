@@ -5,7 +5,7 @@ import TiposConvenios from "../../components/Convenios/TiposConvenios";
 import Seccion2 from "../../assets/images/convenio/seccion2.png";
 import Flecha from "../../assets/images/convenio/flecha.svg";
 import Banner from "../../components/Banner_piero/Banner";
-
+import GrupoImagen from "../../components/Ima_piero/GrupoImagen";
 function AgreementPage() {
   useEffect(() => {
     let numero = document.querySelectorAll(".numero_piero");
@@ -45,6 +45,28 @@ function AgreementPage() {
         answer.style.height = `${height}px`;
       });
     });
+
+    const priceElements = document.querySelectorAll(".price__element_piero");
+    priceElements.forEach((element) => {
+      element.addEventListener("mouseover", () => {
+        element.classList.add("scale-color");
+      });
+      element.addEventListener("mouseout", () => {
+        element.classList.remove("scale-color");
+      });
+    });
+
+    const boton1 = document.querySelectorAll(".cta_piero");
+
+    boton1.forEach((e) => {
+      e.addEventListener("mouseover", () => {
+        e.classList.add("setColor");
+      });
+
+      e.addEventListener("mouseout", () => {
+        e.classList.remove("setColor");
+      });
+    });
   }, []);
 
   return (
@@ -81,13 +103,7 @@ function AgreementPage() {
                 Inscríbete
               </a>
             </div>
-            <figure className="conocimiento__picture_piero">
-              <img
-                src={Seccion2}
-                className="conocimiento__img_piero"
-                alt="Aplica ya"
-              />
-            </figure>
+            <GrupoImagen />
           </div>
         </section>
 
@@ -107,7 +123,7 @@ function AgreementPage() {
               </a>
             </div>
 
-            <div className="price__element_piero price__element--best_piero">
+            <div className="price__element_piero">
               <p className="price__name_piero">Italia</p>
               <h3 className="price__price_piero">Universidad de Italia</h3>
               <div className="price__items_piero">

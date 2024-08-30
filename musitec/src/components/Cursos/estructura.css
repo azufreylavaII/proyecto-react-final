@@ -132,3 +132,8 @@
 .li {
     color: var(--white);
 }
+
+.boxt ul {
+    transform: translateX(30px);
+
+}

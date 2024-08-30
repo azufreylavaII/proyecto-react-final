@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nota1 from "../../assets/images/Inscribirse/cantante1.png";
+import Nota1 from "../../assets/images/Inscribirse/Cantante1.png";
 import Nota2 from "../../assets/images/Inscribirse/interpretacionMusical.png";
 import Nota3 from "../../assets/images/Inscribirse/peda.jpg";
 import "./GrupoImage.css";

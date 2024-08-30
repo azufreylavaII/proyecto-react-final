@@ -77,6 +77,18 @@
 
 }
 
+.contenidooo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 60px;
+    justify-content: center;
+    transform: translateY(-100px); 
+}
+
 .contenido3 {
     height: 100%;
     display: flex;
@@ -102,6 +114,12 @@
     font-size: 20px;
     padding: 10px; /* Padding interno */
     flex-direction: column; 
+}
+
+
+.boxt img {
+    width: 200px;
+    height: 500px;
 }
 
 .h2{

@@ -3,7 +3,7 @@ import "./estructura.css";
 
 function Vocal2() {
   return (
-    <div className="contenido">
+    <div className="contenidooo">
       <div className="boxt">
         <h2>BÁSICO</h2>
         <ul>

@@ -3,7 +3,7 @@ import "./estructura.css";
 
 function Vocal3() {
   return (
-    <div className="contenido">
+    <div className="contenidooo">
       <div className="boxt">
         <img src="./src/assets/images/imagenleo/v2.PNG" alt="Vocal coach" />
       </div>

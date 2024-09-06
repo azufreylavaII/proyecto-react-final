@@ -1,4 +1,0 @@
-[build]
-  base = "musitec"  # El directorio donde está tu proyecto
-  publish = "musitec/dist"  # El directorio donde se generará la compilación
-  command = "npm run build"
